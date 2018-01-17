@@ -1,0 +1,25 @@
+header {
+  display: flex; <!-- on transforme le container HEADER en flex. Du coup les éléments span qui sont à la base block deviennent line -->
+  align-items: center;
+
+
+
+
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+
+}
+
+.logo span {
+  color: mediumaquamarine;
+}
+
+nav span {
+  display: inline-block;
+
+}
