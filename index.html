@@ -6,7 +6,7 @@
   </head>
   <body>
 
-  <!-- On commence par le Header. Le Header est un tag qu'on retrouve en haut d'une page et qui comporte souvent logo, intro, lien... -->
+  <!-- ETAPE 1 : HEADER. Le Header est un tag qu'on retrouve en haut d'une page et qui comporte souvent logo, intro, lien... -->
 
     <header>
       <div class="logo">
@@ -21,13 +21,93 @@
       </nav>
     </header>
 
+  <!-- ETAPE 2 : MAIN CONTENT CONTAINER -->
+    <div class="content">
+  <!-- ETAPE 2.1 : La colonne de gauche, COLUMN LARGE -->
+      <div class="column large"> <!-- ETAPE 2.2:  C'est la colonne de gauche qui englobe toutes les autres. Comme l'image est en background, on la met dans le CSS ATTENTION COMME ON ESPACE LES DEUX NOMS DE LA CLASSE ON LEUR DONNE DEUX CLASSES ! Donc on créé une class commune à tous, "column" et une specifique à chacun, "large" "medium"... -->
+        <div class="lead-story"> <!-- ETAPE 2.3: C'est le haut de la colonne de gauche -->
+          <div class="image-content">
+            <span>Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."<span>
+          </div>
+          <p class="narrative">
+            MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus, ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla sapien massa, dictum vitae est et, pellentesque rutrum risus. Nunc volutpat, metus ac rutrum tempus, orci nisi porttitor dolor, sit amet luctus metus est ut mauris. Quisque vulputate nisl vitae massa rhoncus, at sagittis elit accumsan. Etiam tempus, lorem quis blandit imperdiet, enim dui lobortis tortor, sit amet lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis neque. Nullam sit amet fringilla massa.
+          </p>
+        </div>
 
+        <div class="stories"> <!--ETAPE 2.4: c'est la deuxieme partie de la colonne de gauche. Elle englobe les 2 stories puisqu'on veut qu'elles aient le même style -->
+          <div class="story"> <!--ETAPE 2.5: c'est la premiere story -->
+            <div class="text-content"> <!-- grosse case de la premiere story -->
+              <h2> Orca Spends Vacation at Land World Puget</h2>
+              <p class="narrative">
+                PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...
+              </p>
+            </div>
+            <div class="fall-cancelled image-content"> <!--Le texte qui sera sur l'image. Idem ici vu qu'elle sera en fond on l'insère sur le CSS -->
+              <span>Earth spins backwards for 2017</span>
+            </div>
+          </div> <!-- la 1e story se finit ici -->
 
+          <div class="story"> <!-- ETAPE 2.6: début de la deuxième story. MEME SCHEMA -->
+            <div class="text-content">
+              <h2> Burger for Breakfast: How Early is too Early?</h2>
+              <p class="narrative">
+                Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.
+              </p>
+            </div>
+            <div class="pop-culture image-content">
+              <span>Research Shows Cameras Erase Memory</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="column medium"> <!-- ETAPE 2.7 : colonne du milieu. Il y a 2 case "story" qu'on veut du même style que celles d'avant. La première n'a pas d'image, la seconde si. -->
+        <div class="story">
+          <div class="text-content">
+            <h2>FBI Finds Action Star Guilty of False Advertising</h2>
+            <p class="narrative">
+              WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...
+            </p>
+          </div>
+        </div>
+        <div class="story">
+          <div class="cat-ceo image-content"> <!-- dans cette story l'image est avant le texte donc on inverse -->
+            <span>Cats in Control-Is It a Thing?</span>
+          </div>
+          <p class="narrative">
+              BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.
+          </p>
+        </div>
+      </div>
 
+      <div class="column small"> <!-- ETAPE 2.8: la colonne de droite, une image puis du texte en dessous. Cette fois l'image est brute donc on la met cash -->
+        <img class="cookie" src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-news-bite.png" />
+        <div class="news-bites"> <!-- la case du texte -->
+          <h3>NEWS BITES</h3>
+          <span class="bite">Cat Emoji Goes Viral</span>
+          <span class="bite">Buy Youtube Views</span>
+          <span class="bite">Home Business Advertising Ideas</span>
+          <span class="bite">Advertising Internet Online</span>
+          <span class="bite">Illustration in Marketing Materials</span>
+          <span class="bite">Finally a Top Secret Way You Can</span>
+        </div>
+      </div>
+    </div>
 
-
-
-    </header>
+<!-- ETAPE 3: FOOTER -->
+    <footer><!-- un peu l'équivalent de HEADER mais en bas quoi -->
+      <div class="info">
+        <span class="title">MY Times </span>
+        <nav>
+          <span><a href="#">World</a></span>
+          <span><a href="#">U.S</a></span>
+          <span><a href="#">Tech</a></span>
+          <span><a href="#">Science</a></span>
+        </nav>
+      </div>
+      <div class="copyright">
+        © 2016, My Times (A Division of Codecademy bite)
+      </div>
+    </footer>
   </body>
 </html>
